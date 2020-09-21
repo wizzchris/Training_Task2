@@ -1,0 +1,2 @@
+FROM mongo
+CMD ["mongod"]

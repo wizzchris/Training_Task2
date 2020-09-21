@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+
+  nginx_proxy:
+    build:
+      context: ./dockerfiles/nginx_proxy/
+      dockerfile: nginx_proxy
+    container_name: nginx_proxy
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+
+  web_app:
+    build:
+      context: ./dockerfiles/web_app/
+      dockerfile: web_app
+    container_name: web_app
+    restart: always
+    ports:
+      - 3000:3000
+
+  database:
+    build:
+      context: ./dockerfiles/database/
+      dockerfile: database
+    container_name: database
+    restart: always
+    ports:
+      - 27017:27017

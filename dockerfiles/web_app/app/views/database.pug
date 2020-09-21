@@ -1,0 +1,24 @@
+doctype html
+html
+   head
+      title = "Enter Your Details!"
+      style.
+          body {
+              font-family: Verdana;
+              font-size: 17px;
+              background: #C270F5;
+              text-align:center;
+          }
+   body
+     h1 Hello Welcome To The Name Database!
+     form(method='post' action='/database')
+       label Enter Your Name And Email
+       br
+       input(type='text' name='firstName' placeholder='Enter first name...' required='')
+       input(type='text' name='lastName' placeholder='Enter last name...' required='')
+       input(type='text' name='email' placeholder='Enter your email...' required='')
+       input(type='submit' value='Add Name')
+
+
+     h1 Hope You Have Fun!
+     a(href='/') Go Back To The Homepage!

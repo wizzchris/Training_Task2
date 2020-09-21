@@ -1,0 +1,22 @@
+doctype html
+html
+   head
+      title = "Search The Database!"
+      style.
+          body {
+              font-family: Verdana;
+              font-size: 17px;
+              background: #C270F5;
+              text-align:center;
+          }
+   body
+     h1 Search The Database!
+     form(method='post' action='/find')
+       label Enter The First Name
+       br
+       input(type='text' name='sfirstName' placeholder='Enter first name...' required='')
+       input(type='submit' value='Search For Name')
+
+
+     h1 Hope You Have Fun!
+     a(href='/') Go Back To The Homepage!

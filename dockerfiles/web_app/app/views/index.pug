@@ -1,0 +1,27 @@
+doctype html
+html
+   head
+      title = "This Is The Database"
+      style.
+          body {
+              font-family: Verdana;
+              font-size: 17px;
+              background: #C270F5;
+              text-align:center;
+          }
+   body
+     h1 This Is The Database!
+     table(style='width:100%', border='1')
+      thead
+        tr: th FirstName
+          th LastName
+          th Email
+      tbody
+        each user in users
+          tr
+            td=user.firstName
+            td=user.lastName
+            td=user.email
+
+     h1 Hope You Have Fun!
+     a(href='/') Go Back To The Homepage!

@@ -1,0 +1,5 @@
+FROM node
+WORKDIR /usr/src/app
+ADD ./dockerfiles/web_app/app ./
+RUN npm install
+CMD ["node", "web_app.js"]
