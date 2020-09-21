@@ -9,6 +9,8 @@ services:
     restart: always
     volumes:
       - ./dockerfiles/nginx_proxy/nginxconf.conf:/etc/nginx/conf.d/default.conf
+      - ./myapp.csr:/etc/nginx/myapp.crt
+      - ./myapp.key:/etc/nginx/myapp.key
     ports:
       - 80:80
       - 443:443
